@@ -1,0 +1,35 @@
+# ─── Secrets — never commit ─────────────────────────────────────────────
+.env
+.env.*
+# The sanitized template is the only .env.* we allow into git:
+!.env.example
+
+# ─── Python ─────────────────────────────────────────────────────────────
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.egg-info/
+.pytest_cache/
+
+# ─── OS / editor dust ───────────────────────────────────────────────────
+.DS_Store
+.idea/
+.vscode/
+
+# ─── Claude Code local state ────────────────────────────────────────────
+.claude/
+
+# ─── Agent runtime — must be cleanable between assignment attempts ──────
+state/
+sandbox/
+usage.json
+
+# ─── Gateway local state ────────────────────────────────────────────────
+llm_gatewayV3/.venv/
+llm_gatewayV3/.DS_Store
+llm_gatewayV3/gateway_v3.db
+llm_gatewayV3/gateway_v3.db-journal
+llm_gatewayV3/gateway_v3.db-wal
+llm_gatewayV3/gateway_v3.db-shm
+llm_gatewayV3/__pycache__/

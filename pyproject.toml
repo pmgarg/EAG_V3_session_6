@@ -1,0 +1,17 @@
+[project]
+name = "eagv3-session6-agent"
+version = "0.1.0"
+description = "Four-role agent loop (Memory, Perception, Decision, Action) for EAG V3 Session 6."
+requires-python = ">=3.11"
+dependencies = [
+    "pydantic>=2.7",
+    "httpx>=0.27",
+    "python-dotenv>=1.0",
+    "mcp>=1.2",
+    "ddgs>=9.0",
+    "tavily-python>=0.5",
+    "crawl4ai>=0.4",
+]
+
+[tool.uv]
+package = false

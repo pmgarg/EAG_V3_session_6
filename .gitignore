@@ -21,9 +21,11 @@ __pycache__/
 .claude/
 
 # ─── Agent runtime — must be cleanable between assignment attempts ──────
-state/
-sandbox/
-usage.json
+# Anchored to repo root so docs/sample_outputs/{state,sandbox,usage.json}
+# can be committed as reference evidence for graders.
+/state/
+/sandbox/
+/usage.json
 
 # ─── Gateway local state ────────────────────────────────────────────────
 llm_gatewayV3/.venv/

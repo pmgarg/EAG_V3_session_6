@@ -1,0 +1,243 @@
+[
+  {
+    "id": "becbd390ce69",
+    "kind": "artifact",
+    "text": "fetch_url -> [artifact art:1, 260062 bytes] preview: {   \"status\": 200,   \"content_type\": \"text/markdown\",   \"length_bytes\": 254211,   \"text\": \"[Jump to content](https://en.wikipedia.org/wiki/Claude_Shannon#bodyCo",
+    "keywords": [
+      "fetch_url",
+      "artifact",
+      "art",
+      "260062",
+      "bytes",
+      "preview",
+      "status",
+      "200"
+    ],
+    "value": {
+      "tool": "fetch_url",
+      "arguments": {
+        "url": "https://en.wikipedia.org/wiki/Claude_Shannon"
+      }
+    },
+    "run_id": "dfa9c5a5",
+    "created_at": 1779473478.444882,
+    "artifact_id": "art:1"
+  },
+  {
+    "id": "a1c229f5d95d",
+    "kind": "tool_outcome",
+    "text": "web_search -> {   \"title\": \"Tokyo With Kids \u2013 53 Things To Do Guide + Photos - Plan My Japan\",   \"url\": \"https://www.planmyjapan.com/tokyo-with-kids-things-to-do/\",   \"snippet\": \"Planning a trip to Tokyo with kids? Tokyo is a safe, family friendly city in Japan with lots of children\u2019s activities, cool kid\u2019s attra",
+    "keywords": [
+      "web_search",
+      "title",
+      "tokyo",
+      "kids",
+      "53",
+      "things",
+      "guide",
+      "photos"
+    ],
+    "value": {
+      "tool": "web_search",
+      "arguments": {
+        "max_results": 5,
+        "query": "family-friendly activities Tokyo this weekend"
+      }
+    },
+    "run_id": "7aad0352",
+    "created_at": 1779473553.114016,
+    "artifact_id": null
+  },
+  {
+    "id": "804ad9070f4d",
+    "kind": "tool_outcome",
+    "text": "web_search -> {   \"title\": \"Tokyo weather forecast live: 5-day outlook | Japan\",   \"url\": \"https://www.weather2travel.com/japan/tokyo/forecast/\",   \"snippet\": \"The 5-day weather forecast for Japan (Tokyo) is provided by the Swiss meteorological agency, meteoblue . ... the detailed weather forecasts for Tokyo ...\"",
+    "keywords": [
+      "web_search",
+      "title",
+      "tokyo",
+      "weather",
+      "forecast",
+      "live",
+      "5-day",
+      "outlook"
+    ],
+    "value": {
+      "tool": "web_search",
+      "arguments": {
+        "query": "Tokyo weather forecast Saturday",
+        "max_results": 5
+      }
+    },
+    "run_id": "7aad0352",
+    "created_at": 1779473569.754015,
+    "artifact_id": null
+  },
+  {
+    "id": "b9bd686cdab5",
+    "kind": "artifact",
+    "text": "fetch_url -> [artifact art:2, 43480 bytes] preview: {   \"status\": 200,   \"content_type\": \"text/markdown\",   \"length_bytes\": 42670,   \"text\": \"[![weather2travel.com - travel deals for your holiday in the sun](http",
+    "keywords": [
+      "fetch_url",
+      "artifact",
+      "art",
+      "43480",
+      "bytes",
+      "preview",
+      "status",
+      "200"
+    ],
+    "value": {
+      "tool": "fetch_url",
+      "arguments": {
+        "url": "https://www.weather2travel.com/japan/tokyo/forecast/"
+      }
+    },
+    "run_id": "7aad0352",
+    "created_at": 1779473580.615547,
+    "artifact_id": "art:2"
+  },
+  {
+    "id": "ac6e2fef1e78",
+    "kind": "fact",
+    "text": "mom's date: 2026-05-15 (from: \"My mom's birthday is 15 May 2026. Remember that and give me a calendar reminder for two weeks before and on the day.\")",
+    "keywords": [
+      "mom",
+      "birthday",
+      "2026",
+      "05",
+      "15",
+      "may",
+      "remember"
+    ],
+    "value": {
+      "entity": "mom",
+      "date": "2026-05-15"
+    },
+    "run_id": "17194f9a",
+    "created_at": 1779473641.868224,
+    "artifact_id": null
+  },
+  {
+    "id": "96627f05e7d3",
+    "kind": "tool_outcome",
+    "text": "make_dir -> {   \"ok\": true,   \"path\": \"reminders\",   \"created\": true }",
+    "keywords": [
+      "make_dir",
+      "ok",
+      "true",
+      "path",
+      "reminders",
+      "created"
+    ],
+    "value": {
+      "tool": "make_dir",
+      "arguments": {
+        "path": "reminders"
+      }
+    },
+    "run_id": "17194f9a",
+    "created_at": 1779473647.305203,
+    "artifact_id": null
+  },
+  {
+    "id": "846cc005329f",
+    "kind": "tool_outcome",
+    "text": "create_file -> {   \"ok\": true,   \"path\": \"reminders/mom_birthday_2weeks_2026-05-01.txt\",   \"size_bytes\": 145 }",
+    "keywords": [
+      "create_file",
+      "ok",
+      "true",
+      "path",
+      "reminders",
+      "mom_birthday_2weeks_2026-05-01",
+      "txt",
+      "size_bytes"
+    ],
+    "value": {
+      "tool": "create_file",
+      "arguments": {
+        "path": "reminders/mom_birthday_2weeks_2026-05-01.txt",
+        "content": "CALENDAR REMINDER\nDate: 1 May 2026\nEvent: Mom's birthday is in 2 weeks (15 May 2026)\nAction: Prepare gift, card, and any travel/celebration plans"
+      }
+    },
+    "run_id": "17194f9a",
+    "created_at": 1779473685.081402,
+    "artifact_id": null
+  },
+  {
+    "id": "fe7db5f73352",
+    "kind": "tool_outcome",
+    "text": "create_file -> {   \"ok\": true,   \"path\": \"reminders/mom_birthday_2026-05-15.txt\",   \"size_bytes\": 112 }",
+    "keywords": [
+      "create_file",
+      "ok",
+      "true",
+      "path",
+      "reminders",
+      "mom_birthday_2026-05-15",
+      "txt",
+      "size_bytes"
+    ],
+    "value": {
+      "tool": "create_file",
+      "arguments": {
+        "path": "reminders/mom_birthday_2026-05-15.txt",
+        "content": "CALENDAR REMINDER\nDate: 15 May 2026\nEvent: Mom's Birthday TODAY!\nAction: Call mom, deliver gift/card, celebrate!"
+      }
+    },
+    "run_id": "17194f9a",
+    "created_at": 1779473713.3205519,
+    "artifact_id": null
+  },
+  {
+    "id": "5e82bc149bea",
+    "kind": "tool_outcome",
+    "text": "web_search -> {   \"title\": \"Python's asyncio: A Hands-On Walkthrough \u2013 Real Python\",   \"url\": \"https://realpython.com/async-io-python/\",   \"snippet\": \"Jul 30, 2025 \u00b7 In this tutorial, you\u2019ll learn how Python asyncio works, how to define and run coroutines, and when to use asynchronous programming for better perfo",
+    "keywords": [
+      "web_search",
+      "title",
+      "python",
+      "asyncio",
+      "hands-on",
+      "walkthrough",
+      "real",
+      "url"
+    ],
+    "value": {
+      "tool": "web_search",
+      "arguments": {
+        "query": "Python asyncio best practices",
+        "max_results": 5
+      }
+    },
+    "run_id": "2f2d8d44",
+    "created_at": 1779473796.410034,
+    "artifact_id": null
+  },
+  {
+    "id": "d3602c8f67e3",
+    "kind": "tool_outcome",
+    "text": "web_search -> {   \"title\": \"Asyncio best practices - Async-SIG - Discussions on Python.org\",   \"url\": \"https://discuss.python.org/t/asyncio-best-practices/12576\",   \"snippet\": \"So I thought it\u2019d be great to catalog some of the best practices and patterns to follow while writing asynchronous code in Python, in ord",
+    "keywords": [
+      "web_search",
+      "title",
+      "asyncio",
+      "best",
+      "practices",
+      "async-sig",
+      "discussions",
+      "python"
+    ],
+    "value": {
+      "tool": "web_search",
+      "arguments": {
+        "query": "best practices for using Python asyncio",
+        "max_results": 5
+      }
+    },
+    "run_id": "2f2d8d44",
+    "created_at": 1779473807.386964,
+    "artifact_id": null
+  }
+]
